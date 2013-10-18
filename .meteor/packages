@@ -7,3 +7,6 @@ standard-app-packages
 autopublish
 insecure
 preserve-inputs
+font-awesome
+bootstrap-3
+iron-router

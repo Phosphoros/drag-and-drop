@@ -14,7 +14,6 @@ html, body {
     width: 200px;
     padding: 8px;
     border: 1px solid black;
-    cursor: move;
 
     /* can't select text */
     -webkit-touch-callout: none;
@@ -23,4 +22,39 @@ html, body {
     -moz-user-select: -moz-none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.handle {
+    position: absolute;
+    background-color: yellow;
+    width:20px;
+    height:20px;
+    border: 1px solid black;
+    text-align:center;
+}
+
+.scale {
+    bottom: -10px;
+    right: -10px;
+    cursor: se-resize;
+}
+
+.move {
+    top: -10px;
+    left: -10px;
+    cursor: move;
+}
+
+.add {
+    top:0;
+    left:0;
+    bottom:none;
+    right:none;
+    cursor:pointer;
+}
+
+.remove {
+    top:-10px;
+    right:-10px;
+    cursor:pointer;
 }

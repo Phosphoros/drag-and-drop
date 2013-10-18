@@ -1,6 +1,9 @@
-<body>
+<template name="layout">
+  <div class="handle add">
+    <i class="icon-plus"></i>
+  </div>
   {{> allNotes}}
-</body>
+</template>
 
 <template name="allNotes">
   <div class="all">
@@ -11,7 +14,10 @@
 </template>
 
 <template name="draggableNote">
-  <div class="note" style="top: {{top}}px; left: {{left}}px;">
-    Hi, my name is:
+  <div class="note" style="top: {{top}}px; left: {{left}}px; width: {{width}}px; height: {{height}}px;">
+    <div class="handle move"><i class="icon-move"></i></div>
+    <div class="handle remove"><i class="icon-remove"></i></div>
+    <div class="handle scale"><i class="icon-resize-full icon-flip-horizontal"></i></div>
+    <input type="text" class="form-control" value="name" />
   </div>
 </template>
